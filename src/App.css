@@ -3,17 +3,21 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo {
   height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  margin: 0.5rem;
+  transition: transform 300ms, filter 300ms;
 }
 .logo:hover {
+  transform: scale(1.1);
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -33,30 +37,31 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-
 .app-name {
   position: absolute;
-  top: 10px; 
-  left: 10px; 
-  font-size: 15px; 
-  color: #333; 
-  font-weight: normal; 
-  font-style: italic; 
-
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: #646cff;
 }
-.my-name {
-  text-align: center;
-  margin-top: 20px;
+.app-name-light{
+  font-size: 15px;
+  font-weight: normal;
+  font-style: italic; 
+  color: black;
   
 }
-.my-name-bold{
-font-weight: bold;
+
+
+.my-name {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 18px;
+}
+
+.my-name-bold {
+  font-weight: bold;
+  color: #646cff;
 }
