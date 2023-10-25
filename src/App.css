@@ -37,21 +37,25 @@
   }
 }
 
-.app-name {
+.app-container {
   position: absolute;
   top: 10px;
   left: 10px;
+}
+
+.app-name {
   font-size: 15px;
-  padding: 0.5rem;
+  padding: 0.1rem;
   font-weight: bold;
+  text-align: left; 
   color: #646cff;
 }
-.app-name-light{
+
+.app-name-light {
   font-size: 15px;
   font-weight: normal;
-  font-style: italic; 
+  font-style: italic;
   color: black;
-  
 }
 
 
@@ -64,4 +68,12 @@
 .my-name-bold {
   font-weight: bold;
   color: #646cff;
+}
+
+
+.info-text {
+  position: absolute;
+  bottom: 10px; /* Adjust the bottom margin as needed */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
 }
