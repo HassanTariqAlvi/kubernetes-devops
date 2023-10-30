@@ -5,7 +5,6 @@ files:
     destination: /var/www/k8s-devops
 hooks:
   BeforeInstall:
-    - location: scripts/change_text.sh
+    - location: change_text.sh
       timeout: 300
       runas: root
-
